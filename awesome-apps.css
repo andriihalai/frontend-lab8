@@ -1,0 +1,116 @@
+.awesome-app {
+  background-color: #ffffff;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  outline: 1px solid #f3f2f2;
+  border-radius: 0.3rem;
+}
+
+.awesome-app-picture {
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 45%;
+  background-color: #4ed0c0;
+}
+
+.awesome-app-description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: start;
+  align-self: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.awesome-app-description span {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.awesome-app-description p {
+  color: #919191;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.1rem;
+}
+
+#first-app {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 22%,
+    rgba(9, 121, 85, 1) 59%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+#second-app {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(60, 77, 98, 1) 100%
+  );
+}
+
+#third-app {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(23, 5, 12, 1) 100%
+  );
+}
+
+#fourth-app {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(61, 37, 21, 1) 100%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .awesome-app {
+   width: 70%;
+  }
+
+  .awesome-app-picture {
+    height: 150px; /* Adjust height for smaller devices */
+  }
+
+  .features-title {
+    font-size: 1.5rem; /* Smaller font size for titles */
+  }
+
+  .view-all-button {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 480px) {
+  .features-section {
+    gap: 1rem;
+  }
+
+  .features-title {
+    font-size: 1.2rem;
+  }
+
+  .awesome-app-description p {
+    font-size: 0.9rem;
+  }
+
+  .view-all-button {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+} */
