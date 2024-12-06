@@ -5,7 +5,6 @@
   flex-direction: column;
 }
 
-/* Quotation Container */
 .quotation-container {
   flex: 1;
   display: flex;
@@ -62,7 +61,6 @@
   align-items: center;
   width: 100%;
   height: auto;
-  /* padding: 1rem; */
   background: radial-gradient(
       circle at 70% 30%,
       rgba(255, 255, 255, 0.05) 0%,
@@ -85,8 +83,7 @@
       rgba(0, 0, 0, 0.8) 100%
     ),
     #2a3035;
-  /* max-width: 800px; */
-  height: 30%;
+  min-height: 30%;
 }
 
 .stat-item {
@@ -136,6 +133,7 @@
 
   .stat-items {
     flex-direction: column;
+    flex: 1;
     gap: 2rem;
     background: none;
     background-color: none;
@@ -147,6 +145,11 @@
 }
 
 @media (max-width: 480px) {
+  .stat-item {
+    padding: 0.1rem;
+    text-align: center;
+  }
+
   .text-quote {
     font-size: 1rem;
   }
